@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تثبيت التطبيق</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      max-width: 380px;
+      width: 90%;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    .icon { font-size: 70px; margin-bottom: 15px; }
+    h1 { color: #1a1a2e; font-size: 24px; margin-bottom: 10px; }
+    p { color: #666; margin-bottom: 30px; line-height: 1.6; }
+    .install-btn {
+      display: block;
+      background: linear-gradient(135deg, #007AFF, #0055d4);
+      color: white;
+      padding: 16px 32px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+    .install-btn:active { transform: scale(0.97); }
+    .note {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">📱</div>
+    <h1>اسم تطبيقك</h1>
+    <p>اضغط الزر أدناه لتثبيت التطبيق مباشرة على جهازك</p>
+
+    <a class="install-btn"
+       href="itms-services://?action=download-manifest&url=https://ikira18.github.io/my-ota-app/manifest.plist">
+      ⬇️ تثبيت التطبيق
+    </a>
+
+    <p class="note">
+      ⚠️ تأكد من الثقة بالمطور في:<br>
+      الإعدادات ← عام ← إدارة الجهاز
+    </p>
+  </div>
+</body>
+</html>
